@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        display: flex;
+        height: 300px;
+        width: 900px;
+        border: 2px solid black;
+        margin-left: 30px;
+        justify-items: center;
+      }
+
+      h1 {
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .one {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+      }
+      .two {
+        align-self: center;
+        padding-left: 10%;
+      }
+   .two img {
+        width: 200px;
+        animation-name: rotateimg;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+      }
+      h2 {
+        animation-name: moving;
+      }
+      @keyframes rotateimg {
+        5% {
+            transform: translateX(10px) rotate(2deg);
+        }
+        10% {
+          
+          transform: translateY(30px) rotate(60deg);
+          transition: all 4s ease 1s ;
+        }
+        25% {
+         
+          transform: translateX(50px) rotate(150deg);
+        }
+        40% {
+         
+          transform: translateX(80px) rotate(180deg);
+          transition: all 4s ease 1s;
+        }
+        50% {
+         
+          transform: translateX(120px) rotate(250deg);
+          transition: all 2s ease 1s;
+        }
+        70% {
+          
+          transform: translateX(150px) rotate(300deg);
+          transition: all 4s ease 1s;
+        }
+        90% {
+          
+          transform: translateX(200px) rotate(360deg);
+          transition: all 2s ease 1s;
+        }
+        100% {
+            transform: translateX(220px) rotate(360deg);
+          transition: all 2s ease 1s;
+
+        }
+      }
+      .parent2 {
+        display: flex;
+        height: 300px;
+        width: 900px;
+        border: 2px solid black;
+        margin-left: 30px;
+        justify-items: center;
+      }
+      .three {
+        align-self: center;
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+      }
+      .four {
+        align-self: center;
+        padding-left: 30%;
+      }
+
+      .four img {
+        width: 200px;
+        animation-name: rotate;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+      }
+      h2 {
+        animation-name: moving;
+      }
+      @keyframes rotate {
+        5% {
+            transform: translateX(-10px) rotate(-2deg);
+        }
+        10% {
+          
+          transform: translateX(-30px) rotate(-60deg);
+          transition: all 4s ease 1s ;
+        }
+        25% {
+         
+          transform: translateX(-50px) rotate(-150deg);
+        }
+        40% {
+         
+          transform: translateX(-80px) rotate(-180deg);
+          transition: all 4s ease 1s;
+        }
+        50% {
+         
+          transform: translateX(-120px) rotate(-250deg);
+          transition: all 2s ease 1s;
+        }
+        70% {
+          
+          transform: translateX(-150px) rotate(-300deg);
+          transition: all 4s ease 1s;
+        }
+        90% {
+          
+          transform: translateX(-200px) rotate(-360deg);
+          transition: all 2s ease 1s;
+        }
+        100% {
+            transform: translateX(-220px) rotate(-360deg);
+          transition: all 2s ease 1s;
+
+        }
+      }
+      .parent3 {
+        display: flex;
+        height: 300px;
+        width: 900px;
+        border: 2px solid black;
+        margin-left: 30px;
+        justify-items: center;
+      }
+      .five {
+        height: 300px;
+        width: 300px;
+        border: 2px solid black;
+      }
+      .six {
+        align-self: center;
+        padding-left: 20%;
+      }
+
+      .six img {
+        width: 200px;
+        animation-name: img;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+      }
+      h2 {
+        animation-name: moving;
+      }
+      @keyframes img {
+        5% {
+            transform: translateY(10px) rotate(5deg);
+        }
+        10% {
+          
+          transform: translateY(30px) rotate(60deg);
+          transition: all 4s ease 1s ;
+        }
+        25% {
+         
+          transform: translateY(50px) rotate(150deg);
+        }
+        40% {
+         
+          transform: translateY(80px) rotate(180deg);
+          transition: all 4s ease 1s;
+        }
+        50% {
+         
+          transform: translateY(120px) rotate(250deg);
+          transition: all 2s ease 1s;
+        }
+        70% {
+          
+          transform: translateY(150px) rotate(300deg);
+          transition: all 4s ease 1s;
+        }
+        90% {
+          
+          transform: translateY(200px) rotate(360deg);
+          transition: all 2s ease 1s;
+        }
+        100% {
+            transform: translateY(220px) rotate(360deg);
+          transition: all 2s ease 1s;
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hover over the image to see rolling and roll-back animations</h1>
+    <div class="parent">
+      <div class="child one">
+        <p>Image1</p>
+      </div>
+      <div class="child two">
+        <img src="../css position/123.jpg" alt="" width="150px" />
+      </div>
+      
+    </div>
+    <div class="parent2">
+        <div class="three">
+            Image2
+          </div>
+          <div class="four">
+            <img src="../css position/123.jpg" alt="" width="150px" />
+          </div>
+
+    </div>
+    <div class="parent3">
+        <div class="five">
+            <p>Image3</p>
+          </div>
+          <div class="six">
+            <img src="../css position/123.jpg" alt="" width="150px" />
+          </div>
+
+    </div>
+  </body>
+</html>
